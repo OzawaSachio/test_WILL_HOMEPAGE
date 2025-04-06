@@ -148,6 +148,7 @@
 }
 
 .vision-text-box {
+  display: flex;
   background: var(--shinonome);
   border-radius: 12px;
   gap: 16px;
@@ -155,10 +156,9 @@
 
 .vision-text {
   color: white;
-  font-size: 20px;
   text-align: center;
-  padding: 32px 56px;
   align-self: stretch;
+  padding: 32px 56px;
   font-family: var(--noto);
   font-size: var(--font_32);
   font-style: normal;
