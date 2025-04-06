@@ -151,6 +151,7 @@
   display: flex;
   background: var(--shinonome);
   border-radius: 12px;
+  padding: 32px 56px;
   gap: 16px;
 }
 
@@ -158,7 +159,6 @@
   color: white;
   text-align: center;
   align-self: stretch;
-  padding: 32px 56px;
   font-family: var(--noto);
   font-size: var(--font_32);
   font-style: normal;
