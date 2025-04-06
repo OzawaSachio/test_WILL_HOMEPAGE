@@ -138,6 +138,9 @@
 }
 
 .vision-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   text-align: center;
 }
 
@@ -148,11 +151,9 @@
 }
 
 .vision-text-box {
-  display: flex;
   background: var(--shinonome);
   border-radius: 12px;
   padding: 32px 56px;
-  gap: 16px;
 }
 
 .vision-text {
