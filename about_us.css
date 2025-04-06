@@ -137,29 +137,34 @@
   text-align: center;
 }
 
-.vision-container {
+.vision-container,
+.goal-container {
   text-align: center;
 }
 
-.vision-title {
+.vision-title,
+.goal-title {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.vision-text-container {
+.vision-text-container,
+.goal-text-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.vision-text-box {
+.vision-text-box,
+.goal-text-box {
   background: var(--shinonome);
   border-radius: 12px;
   padding: 32px 56px;
 }
 
-.vision-text {
+.vision-text,
+.goal-text {
   color: white;
   text-align: center;
   align-self: stretch;
