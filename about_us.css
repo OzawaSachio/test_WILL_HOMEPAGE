@@ -138,9 +138,6 @@
 }
 
 .vision-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   text-align: center;
 }
 
@@ -148,6 +145,12 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.vision-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .vision-text-box {
