@@ -27,6 +27,12 @@
   --times-new-roman: "Tinos", serif;
 }
 
+.about-us-container {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page-header {
   display: flex;
   padding: 24px 32px;
