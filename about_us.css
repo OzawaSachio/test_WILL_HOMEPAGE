@@ -182,6 +182,7 @@ body {
 
 .vision-container,
 .goal-container {
+  align-self: stretch;
   text-align: center;
 }
 
