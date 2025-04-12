@@ -41,6 +41,7 @@ body {
 .about-us-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   align-self: stretch;
   gap: 160px;
@@ -322,10 +323,11 @@ canvas {
 .relationship-image-container {
   display: flex;
   flex-direction: column;
-  aspect-ratio: 16/9;
 }
 
 .relationship-image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 .link-playground-hp-container {
@@ -334,14 +336,14 @@ canvas {
 
 .link-playground-hp {
   text-decoration: none;
-  text-decoration-color: white;
+  color: white;
 }
 
 .link-playground-hp-square {
   width: 377px;
   height: 56px;
-  margin: 0 auto;
-  background-color: var(--shinonome);
+  border-radius: 12px;
+  background: var(--shinonome);
   text-overflow: ellipsis;
 }
 
