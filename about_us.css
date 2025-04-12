@@ -275,12 +275,6 @@ canvas {
   display: inline-block;
 }
 
-@media (max-width: 768px) {
-  .chart-grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-}
 .legend-color.male {
   background-color: #6d9ea8;
 }
@@ -334,26 +328,12 @@ canvas {
 .relationship-image-container img {
   width: auto;
   height: 600px;
-  margin: 0 205.5px;
+  margin: 0px 205.5px;
   align-self: stretch;
-}
-
-@media (max-width: 768px) {
-  .relationship-image-container img {
-    width: auto;
-    height: 222px;
-    margin: 0 30px;
-  }
 }
 
 .link-playground-hp-container {
   text-align: right;
-}
-
-@media (max-width: 768px) {
-  .link-playground-hp-container {
-    text-align: center;
-  }
 }
 
 .link-playground-hp {
@@ -367,13 +347,6 @@ canvas {
   margin: 0 auto;
   background-color: var(--shinonome);
   text-overflow: ellipsis;
-}
-
-@media (max-width: 768px) {
-  .link-playground-hp-square {
-    width: auto;
-    height: auto;
-  }
 }
 
 .link-playground-hp-square:hover {
@@ -458,4 +431,23 @@ canvas {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.72px;
+}
+
+@media (max-width: 768px) {
+  .chart-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .link-playground-hp-container {
+    text-align: center;
+  }
+  .relationship-image-container img {
+    width: auto;
+    height: auto;
+    margin: 0 30px;
+  }
+  .link-playground-hp-square {
+    width: auto;
+    height: auto;
+  }
 }
