@@ -314,16 +314,14 @@ canvas {
 }
 
 .relationship-container {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
 .relationship-image-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-  position: relative;
 }
 
 .relationship-image-container img {
