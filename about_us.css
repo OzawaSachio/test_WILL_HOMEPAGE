@@ -317,7 +317,6 @@ canvas {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 0px 205.5px;
 }
 
 .relationship-image-container {
@@ -326,7 +325,7 @@ canvas {
 }
 
 .relationship-image-container img {
-  width: auto;
+  width: 70%;
   height: 600px;
 }
 
