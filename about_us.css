@@ -324,9 +324,6 @@ canvas {
   gap: 10px;
 }
 
-.relationship-image-container {
-}
-
 .relationship-image-container img {
   width: 100%;
   height: auto;
