@@ -318,6 +318,22 @@ canvas {
   background-color: #9fb8d2;
 }
 
+.link-playground-hp-container {
+  text-align: right;
+}
+
+.link-playground-square {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: var(--shinonome);
+}
+
+.link-playground-hp-square:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
