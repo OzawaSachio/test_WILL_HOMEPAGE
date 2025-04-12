@@ -322,11 +322,10 @@ canvas {
 .relationship-image-container {
   display: flex;
   flex-direction: column;
+  aspect-ratio: 16/9;
 }
 
 .relationship-image-container img {
-  width: 70%;
-  height: 600px;
 }
 
 .link-playground-hp-container {
