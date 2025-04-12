@@ -28,11 +28,24 @@
   --times-new-roman: "Tinos", serif;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--noto);
+  min-height: 100vh;
+  background-color: var(--ivory);
+  padding-bottom: 100px;
+}
+
 .about-us-container {
-  width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: stretch;
+  gap: 160px;
   background-color: var(--ivory);
+  margin-bottom: 160px;
 }
 
 .page-header {
@@ -40,6 +53,7 @@
   padding: 24px 32px;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--ivory);
 }
 
 .will-logo {
@@ -131,22 +145,44 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  width: 1134px;
+  flex-direction: column;
+  gap: 140px;
 }
 
 .about-will-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+}
+
+.container-title {
+  color: #232323;
   text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 48px;
+}
+
+.about-will-text {
+  align-self: stretch;
+  color: var(--gray, #535353);
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 129.945%; /* = 46.78px */
+  letter-spacing: 3.24px;
 }
 
 .vision-container,
 .goal-container {
   text-align: center;
-}
-
-.vision-title,
-.goal-title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .vision-text-container,
@@ -176,12 +212,117 @@
   letter-spacing: 3.24px;
 }
 
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列構成 */
+  gap: 80px 64px;
+  justify-content: center;
+  align-items: center; /* 🔸ここで"縦方向の中央揃え"に */
+}
+
+.chart-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 422px;
+  height: 326px;
+}
+
+.chart-title {
+  font-size: var(--font_24);
+  font-weight: bold;
+  color: var(--gray);
+  margin-bottom: 28px;
+  text-align: center;
+  width: 100%;
+}
+
+.chart-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 28px;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  width: 266px !important;
+  height: 266px !important;
+}
+
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: var(--font_16);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--gray);
+}
+
+.chart-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .chart-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+.legend-color.male {
+  background-color: #6d9ea8;
+}
+.legend-color.female {
+  background-color: #f7c76f;
+}
+.legend-color.fourth {
+  background-color: #f39ca8;
+}
+.legend-color.third {
+  background-color: #a8d6cc;
+}
+.legend-color.second {
+  background-color: #f7c76f;
+}
+.legend-color.first {
+  background-color: #9fb8d2;
+}
+.legend-color.waseda {
+  background-color: #6d9ea8;
+}
+.legend-color.other {
+  background-color: #f7c76f;
+}
+.legend-color.sci {
+  background-color: #f39ca8;
+}
+.legend-color.hum {
+  background-color: #a8d6cc;
+}
+.legend-color.edu {
+  background-color: #f7c76f;
+}
+.legend-color.com {
+  background-color: #9fb8d2;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--ivory);
 }
 
 .footer-top {
@@ -191,6 +332,7 @@
   align-items: center;
   gap: 80px;
   align-self: stretch;
+  background-color: var(--ivory);
 }
 
 .footer-sm-logo {
@@ -201,26 +343,28 @@
 
 .x-logo {
   display: flex;
-  padding: 12px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   cursor: pointer;
+}
+
+.x-logo img {
+  width: 42px;
+  height: 42px;
 }
 
 .instagram-logo {
   display: flex;
-  padding: 12px;
-  flex-direction: column;
+  padding: 10px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   cursor: pointer;
 }
 
 .instagram-logo img {
-  width: 85px;
-  height: 79px;
+  width: 56px;
+  height: 56px;
 }
 
 .footer-logo {
@@ -240,14 +384,13 @@
 }
 
 .footer-copyright img {
-  width: 32px;
-  height: 32px;
+  background-color: var(--ivory);
 }
 
 .copyright-text {
   color: var(--gray);
   font-family: var(--times-new-roman);
-  font-size: var(--font_32);
+  font-size: var(--font_18);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
