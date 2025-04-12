@@ -318,15 +318,62 @@ canvas {
   background-color: #9fb8d2;
 }
 
+.relationship-container {
+  gap: 10px;
+}
+
+.relationship-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  position: relative;
+}
+
+.relationship-image-container img {
+  width: auto;
+  height: 600px;
+  margin: 0 205.5px;
+  align-self: stretch;
+}
+
+@media (max-width: 768px) {
+  .relationship-image-container img {
+    width: auto;
+    height: 222px;
+    margin: 0 30px;
+  }
+}
+
 .link-playground-hp-container {
   text-align: right;
 }
 
+@media (max-width: 768px) {
+  .link-playground-hp-container {
+    text-align: center;
+  }
+}
+
+.link-playground-hp {
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
 .link-playground-hp-square {
-  width: 100px;
-  height: 100px;
+  width: 377px;
+  height: 56px;
   margin: 0 auto;
   background-color: var(--shinonome);
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .link-playground-hp-square {
+    width: 350px;
+    height: 56px;
+  }
 }
 
 .link-playground-hp-square:hover {
