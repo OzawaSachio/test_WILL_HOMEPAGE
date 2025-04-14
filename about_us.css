@@ -30,7 +30,7 @@
 
 html,
 body {
-  margin: 0;
+  margin: 8;
   padding: 0;
   font-family: var(--noto);
   min-height: 100vh;
@@ -40,6 +40,7 @@ body {
 
 .about-us-container {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -134,7 +135,7 @@ body {
   right: 49px;
   bottom: 55px;
   font-size: var(--font_70);
-  font-family: var(--noto);
+  font-family: var(--times-new-roman);
   color: var(--ivory);
   font-style: normal;
   font-weight: 700;
@@ -160,13 +161,15 @@ body {
   flex-direction: column;
   align-items: center;
   align-self: stretch;
+  width: 100%;
+  height: auto;
 }
 
 .container-title {
   color: #232323;
   text-align: center;
   font-family: "Noto Sans JP";
-  font-size: 48px;
+  font-size: var(--font_48);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -177,16 +180,20 @@ body {
   align-self: stretch;
   color: var(--gray, #535353);
   text-align: center;
-  font-family: "Noto Sans JP";
-  font-size: 36px;
+  font-family: var(--noto);
+  font-size: var(--font_36);
   font-style: normal;
   font-weight: 400;
   line-height: 129.945%; /* = 46.78px */
   letter-spacing: 3.24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .vision-container,
 .goal-container {
+  width: 100%;
+  height: auto;
   align-self: stretch;
   text-align: center;
 }
@@ -343,14 +350,16 @@ canvas {
 }
 
 .link-playground-hp-square {
-  width: 377px;
-  height: 56px;
+  width: auto;
+  height: auto;
   border-radius: 12px;
   background: var(--shinonome);
   text-overflow: ellipsis;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 16px 40px;
+  font-size: var(--font_20);
 }
 
 .link-playground-hp-square:hover {
@@ -437,14 +446,10 @@ canvas {
   letter-spacing: 0.72px;
 }
 
-@media (max-width: 768px) {
-  .chart-grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-  .link-playground-hp-container {
-    text-align: center;
-    display: block;
+@media (max-width: 1200px) {
+  html,
+  body {
+    padding-bottom: 0px;
   }
 
   .nav-wrapper {
@@ -564,5 +569,67 @@ canvas {
 
   .link-box {
     display: none;
+  }
+
+  .head-image-container img {
+    height: 400px;
+  }
+
+  .head-letter {
+    font-size: var(--font_48);
+    right: 41px;
+    bottom: 33px;
+  }
+
+  .about-will-text {
+    font-size: var(--font_24);
+  }
+
+  .container-title {
+    font-size: var(--font_32);
+  }
+
+  .vision-text,
+  .goal-text {
+    font-size: var(--font_24);
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .relationship-container {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .link-playground-hp-container {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .link-playground-hp {
+    display: block;
+  }
+
+  .link-playground-hp-square {
+    font-size: var(--font_16);
+  }
+
+  .footer-top {
+    flex-direction: column-reverse;
+    padding: 40px 0px 20px 0px;
+    gap: 30px;
+  }
+
+  .footer-logo {
+    gap: 20px;
+  }
+
+  .footer-sm-logo {
+    gap: 18px;
   }
 }
